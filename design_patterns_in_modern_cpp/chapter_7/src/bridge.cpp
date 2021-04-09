@@ -20,7 +20,9 @@ ProduceParts:: ProduceParts(Workshop* backend) : Bridge(backend) {}
 
 void ProduceParts::build_vehicle()
 {
-    std::cout << "ProduceParts on ";
+    std::cout << "**************************************************************************************************************\n";
+    std::cout << "*************************************           PRODUCE PARTS FOR           **********************************\n";
+    std::cout << "**************************************************************************************************************\n";
     implementation->execute_work_order();
 }
 
@@ -31,7 +33,10 @@ Assemble::Assemble(Workshop* backend) : Bridge(backend) {}
 
 void Assemble::build_vehicle()
 {
-    std::cout << "Assemble on ";
+    std::cout << "==============================================================================================================\n";
+    std::cout << "=====================================               ASSEMBLE                 =================================\n";
+    std::cout << "==============================================================================================================\n";
+
     implementation->execute_work_order();
 }
 
