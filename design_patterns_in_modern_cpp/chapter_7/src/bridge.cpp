@@ -27,7 +27,7 @@ void ProduceParts::build_vehicle()
 }
 
 /**
- * Assemble Vehicle
+ * Assemble Factory
  */
 Assemble::Assemble(Workshop* backend) : Bridge(backend) {}
 
