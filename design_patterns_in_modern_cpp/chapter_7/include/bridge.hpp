@@ -3,7 +3,7 @@
 /**
  * Implemented interface.
  */
-class Vehicle
+class Factory
 {
     public:
         virtual void build_vehicle() = 0;
@@ -21,7 +21,7 @@ class Workshop
 /**
  * The Bridge
  */
-class Bridge : public Vehicle
+class Bridge : public Factory
 {
     protected:
         Workshop* implementation;
